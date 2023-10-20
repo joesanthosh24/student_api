@@ -10,7 +10,7 @@ students = {
     '2': {'id': '2', 'name': 'Mike', 'email': 'B'}
 }
 
-@app.oute('/')
+@app.route('/')
 def hello():
     return "Hello from Student service"
 
