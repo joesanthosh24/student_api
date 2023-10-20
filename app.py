@@ -10,6 +10,10 @@ students = {
     '2': {'id': '2', 'name': 'Mike', 'email': 'B'}
 }
 
+@app.oute('/')
+def hello():
+    return "Hello from Student service"
+
 @app.route('/student/<id>')
 def student(id):
     student_info = students.get(id, {})
